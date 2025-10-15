@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Student Information</h1>
+
+    <form method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="roll" placeholder="Roll No" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Students List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Email</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.roll }}</td>
+            <td>{{ student.email }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
