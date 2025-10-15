@@ -5,13 +5,25 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Student Info</h1>
-    <div>
-        <strong>Sort by:</strong>
-        <a href="/?sort=id">ID</a> |
-        <a href="/?sort=name">Name</a> |
-        <a href="/?sort=course">Course</a>
-    </div>
+    <h1>Student Information</h1>
+
+    <!-- Add student form -->
+    <h2>Add New Student</h2>
+    <form action="/add" method="post">
+        Name: <input type="text" name="name" required>
+        Email: <input type="email" name="email" required>
+        Course: <input type="text" name="course" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <!-- Sort options -->
+    <h2>Sort Students</h2>
+    <a href="/?sort=id">By ID</a> |
+    <a href="/?sort=name">By Name</a> |
+    <a href="/?sort=course">By Course</a>
+
+    <!-- Student table -->
+    <h2>Student List</h2>
     <table border="1" cellpadding="5" cellspacing="0">
         <tr>
             <th>ID</th>
