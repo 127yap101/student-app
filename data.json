@@ -1,14 +1,5 @@
 [
-    {
-        "id": 1,
-        "name": "Yash Parkhi",
-        "email": "yash@example.com",
-        "course": "Computer Science"
-    },
-    {
-        "id": 2,
-        "name": "Alice Johnson",
-        "email": "alice@example.com",
-        "course": "Mathematics"
-    }
+    {"id": 1, "name": "Yash Parkhi", "email": "yash@example.com", "course": "CS"},
+    {"id": 2, "name": "Alice Johnson", "email": "alice@example.com", "course": "Math"},
+    {"id": 3, "name": "Bob Smith", "email": "bob@example.com", "course": "Physics"}
 ]
